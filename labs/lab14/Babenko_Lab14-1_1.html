@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна сторінка</title>
+    <!-- Підключення стилів Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Стилі для шапки і підвалу */
+        .header, .footer {
+            background-color: #0078D7; /* Насичений синій */
+            color: #fff; /* Білий текст */
+        }
+
+            .header .left, .footer .left {
+                color: #FFD700; /* Золотий текст для лівої частини */
+            }
+
+            .header .right, .footer .right {
+                color: #FF4500; /* Помаранчевий текст для правої частини */
+            }
+
+        .menu {
+            background-color: #f4f4f4; /* Світло-сірий фон */
+            border: 1px solid #ccc; /* Світло-сіра рамка */
+            color: #333; /* Темно-сірий текст */
+        }
+
+        .content {
+            background-color: #fff; /* Білий фон */
+            border: 1px solid #ccc; /* Світло-сіра рамка */
+            min-height: 200px; /* Мінімальна висота контенту */
+            color: #333; /* Темно-сірий текст */
+        }
+        /* Адаптивність для мобільних пристроїв */
+        @media (max-width: 768px) {
+            .menu {
+                background-color: #e9ecef; /* Світліший фон меню */
+            }
+
+            .header, .footer {
+                text-align: center; /* Центрування тексту на маленьких екранах */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Шапка сторінки -->
+        <div class="row header py-3">
+            <div class="col-6 text-center left">
+                Ліва частина шапки
+            </div>
+            <div class="col-6 text-center right">
+                Права частина шапки
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 menu text-center py-3">
+                Ліве меню
+            </div>
+            <div class="col-6 content text-center py-3">
+                Контент
+            </div>
+            <div class="col-3 menu text-center py-3">
+                Праве меню
+            </div>
+        </div>
+
+        <div class="row footer py-3">
+            <div class="col-6 text-center left">
+                Ліва частина підвалу
+            </div>
+            <div class="col-6 text-center right">
+                Права частина підвалу
+            </div>
+        </div>
+    </div>
+</body>
+</html>

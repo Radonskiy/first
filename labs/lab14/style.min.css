@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Світло-сірий фон */
+    color: #333; /* Темний текст */
+}
+
+header {
+    background-color: #0078D7; /* Насичений синій */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+    header .menu {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+        header .menu li {
+            margin: 0 20px;
+        }
+
+            header .menu li a {
+                color: #fff; /* Білий текст */
+                text-decoration: none;
+                padding: 10px 0;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+                header .menu li a:hover {
+                    color: #FFD700; /* Золотий при наведенні */
+                    text-decoration: underline;
+                }
+
+section {
+    padding: 30px;
+}
+
+.movies-section,
+.series-section {
+    background-color: #fff; /* Білий блок */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тінь */
+}
+
+    .movies-section h2,
+    .series-section h2 {
+        margin-top: 0;
+        color: #0078D7; /* Насичений синій */
+        font-size: 24px;
+        border-bottom: 3px solid #0078D7;
+        padding-bottom: 10px;
+    }
+
+    .movies-section .movies,
+    .series-section .series {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 15px 0;
+    }
+
+    .movies-section .movie,
+    .series-section .series-item {
+        width: 150px;
+        text-align: center;
+        background-color: #f9f9f9; /* Світлий блок */
+        border-radius: 10px;
+        padding: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        .movies-section .movie:hover,
+        .series-section .series-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Збільшена тінь */
+            background-color: #0078D7; /* Синій при наведенні */
+            color: #fff; /* Білий текст */
+        }
+
+        .movies-section .movie img,
+        .series-section .series-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .movies-section .movie p,
+        .series-section .series-item p {
+            font-size: 14px;
+            color: #333; /* Темний текст */
+            margin: 10px 0 0;
+        }
+
+footer {
+    background-color: #0078D7; /* Насичений синій */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Білий текст */
+    font-size: 14px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь нагору */
+}

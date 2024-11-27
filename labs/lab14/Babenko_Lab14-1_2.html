@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна сторінка</title>
+    <!-- Підключення стилів Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Стилі для шапки і підвалу */
+        .header, .footer {
+            background-color: #2c3e50; /* Темно-синій фон */
+            color: #ecf0f1; /* Світлий текст */
+        }
+
+            .header .left, .footer .left {
+                color: #e74c3c; /* Червоний текст для лівої частини */
+            }
+
+            .header .right, .footer .right {
+                color: #f1c40f; /* Жовтий текст для правої частини */
+            }
+
+        /* Меню та контент */
+        .menu {
+            background-color: #34495e; /* Темний сірий для меню */
+            color: #ecf0f1; /* Світлий текст */
+            border: 1px solid #2c3e50; /* Темний бордер */
+        }
+
+        .content {
+            background-color: #ecf0f1; /* Світло-сірий фон */
+            color: #2c3e50; /* Темний текст */
+            border: 1px solid #bdc3c7; /* Світлий бордер */
+            min-height: 200px; /* Мінімальна висота */
+        }
+
+        /* Адаптивний стиль для екранів шириною від 992px до 1199px */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .header .left, .footer .left {
+                width: 100%; /* Ліва частина на всю ширину */
+            }
+
+            .header .right, .footer .right {
+                width: 100%; /* Права частина на всю ширину */
+            }
+
+            .menu {
+                width: 50%; /* Меню на половину ширини */
+            }
+
+            .content {
+                width: 100%; /* Контент на всю ширину */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Шапка сторінки -->
+        <div class="row header py-3">
+            <div class="col-md-6 col-lg-12 text-center left">
+                Ліва частина шапки
+            </div>
+            <div class="col-md-6 col-lg-12 text-center right">
+                Права частина шапки
+            </div>
+        </div>
+
+        <!-- Основний контент сторінки -->
+        <div class="row">
+            <div class="col-md-6 col-lg-3 menu text-center py-3">
+                Ліве меню
+            </div>
+            <div class="col-md-6 col-lg-6 content text-center py-3">
+                Контент
+            </div>
+            <div class="col-md-6 col-lg-3 menu text-center py-3">
+                Праве меню
+            </div>
+        </div>
+
+        <!-- Підвал сторінки -->
+        <div class="row footer py-3">
+            <div class="col-md-6 col-lg-12 text-center left">
+                Ліва частина підвалу
+            </div>
+            <div class="col-md-6 col-lg-12 text-center right">
+                Права частина підвалу
+            </div>
+        </div>
+    </div>
+</body>
+</html>
